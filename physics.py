@@ -21,3 +21,8 @@ def net_force(gravity, drag):
     y = gravity[0] + drag[0]
     return (x, y)
 
+def net_acceleration(force, mass):
+    x = force[0] / mass
+    y = force[1] / mass
+    return (x, y)
+
